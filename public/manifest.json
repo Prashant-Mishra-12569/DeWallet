@@ -5,22 +5,27 @@
   "description": "Secure Ethereum wallet extension for Sepolia testnet",
   "action": {
     "default_popup": "index.html",
-    "default_icon": {
-      "16": "lovable-uploads/fcae4b49-2dcf-481d-b0d4-4df268c4d28f.png",
-      "48": "lovable-uploads/fcae4b49-2dcf-481d-b0d4-4df268c4d28f.png",
-      "128": "lovable-uploads/fcae4b49-2dcf-481d-b0d4-4df268c4d28f.png"
-    }
+    "default_icon": "/lovable-uploads/fcae4b49-2dcf-481d-b0d4-4df268c4d28f.png"
   },
   "permissions": [
     "storage",
     "activeTab"
   ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
   "icons": {
-    "16": "lovable-uploads/fcae4b49-2dcf-481d-b0d4-4df268c4d28f.png",
-    "48": "lovable-uploads/fcae4b49-2dcf-481d-b0d4-4df268c4d28f.png",
-    "128": "lovable-uploads/fcae4b49-2dcf-481d-b0d4-4df268c4d28f.png"
+    "128": "/lovable-uploads/fcae4b49-2dcf-481d-b0d4-4df268c4d28f.png"
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
-  }
+  },
+  "web_accessible_resources": [{
+    "resources": [
+      "lovable-uploads/*",
+      "assets/*"
+    ],
+    "matches": ["<all_urls>"]
+  }]
 }

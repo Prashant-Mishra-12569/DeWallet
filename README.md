@@ -1,69 +1,10 @@
-# Welcome to your Lovable project
+Hello,
 
-## Project info
+Prashant here,
 
-**URL**: https://lovable.dev/projects/c679102a-243d-4195-9fca-eb191dfdee1b
+Make sure to connect me on LinkedIn - https://www.linkedin.com/in/prashant12569/
 
-## How can I edit this code?
+Here is the prompt for your preferences:
 
-There are several ways of editing your application.
+Build a secure and efficient smart contract in Solidity (latest version) for a wallet extension named "DeWallet". The contract should include all essential features for wallet creation, funds sending/receiving, and wallet recovery. Ensure the contract is optimized for gas efficiency and works seamlessly on the Sepolia testnet. Use Web3.js or Ethers.js for blockchain interaction, and implement AES encryption or similar for securing sensitive data like seed phrases and private keys. The contract should allow users to generate a new wallet with a 12-word seed phrase (BIP-39 standard), securely store the encrypted seed phrase, and enable wallet recovery using the seed phrase. Implement functions for sending and receiving ETH, including gas fee estimation and secure transaction signing. Add support for ERC-20 tokens and include event logging for all major actions like wallet creation and funds transfer. Ensure the contract is thoroughly tested and optimized for deployment on Sepolia. Provide the Solidity code, deployment scripts, and a brief document explaining the workflow. Use the latest Solidity features like require, assert, and events for better code readability and security. Make sure the system is scalable and can handle multiple users efficiently.  Just build smart contract only. Include all features if I forget to mention something for creating wallet extension.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/c679102a-243d-4195-9fca-eb191dfdee1b) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c679102a-243d-4195-9fca-eb191dfdee1b) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)

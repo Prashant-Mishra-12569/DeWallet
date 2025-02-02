@@ -5,6 +5,8 @@ import { useQuery } from "@tanstack/react-query";
 import { ethers } from "ethers";
 import { CONTRACT_ADDRESS } from "@/contracts/DeWalletABI";
 
+const ALCHEMY_API_KEY = "cUnkmV9JNeKd-cc5uviKiJIsy6BmtSY8";
+
 interface TokenListProps {
   tokens: Token[];
 }
@@ -13,7 +15,7 @@ const TokenList = ({ tokens }: TokenListProps) => {
   const { data: ethBalance } = useQuery({
     queryKey: ['ethBalance'],
     queryFn: async () => {
-      const provider = new ethers.JsonRpcProvider("https://eth-sepolia.g.alchemy.com/v2/cUnkmV9JNeKd-cc5uviKiJIsy6BmtSY8");
+      const provider = new ethers.JsonRpcProvider(`https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_API_KEY}`);
       const walletAddress = localStorage.getItem("walletAddress");
       if (!walletAddress) return "0";
       const balance = await provider.getBalance(walletAddress);
